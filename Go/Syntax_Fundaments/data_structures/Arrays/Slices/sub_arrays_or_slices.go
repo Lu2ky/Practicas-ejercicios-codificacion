@@ -30,7 +30,7 @@ func main() {
 
 		Declaracion de un slice
 
-		var slice []int
+		var slice []T
 		slice := make([]T, 0)
 
 		Desglosado>> Inicializamos un array, luego ese array sera igual a el retorno del metodo "make"

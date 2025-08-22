@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-/* Las estructuras o moldes, son un tipo de estructura de datos
+/*
+	Las estructuras o moldes, son un tipo de estructura de datos
+
 que nos ayuda a contener varias variables de cualquier tipo
 en una sola estructura, asociadas en base al contexto
 */
@@ -13,11 +17,11 @@ type persona struct {
 }
 
 /*
-	Aquellas variables que su nombre empiece por mayuscula
-	son publicas (accesibles desde otros paquetes), aquellas
-	variables que empiecen por minuscula son privadas
-	(no accesibles desde otros paquetes unicamente desde el propio
-	paquete donde se instancia)
+Aquellas variables que su nombre empiece por mayuscula
+son publicas (accesibles desde otros paquetes), aquellas
+variables que empiecen por minuscula son privadas
+(no accesibles desde otros paquetes unicamente desde el propio
+paquete donde se instancia)
 */
 func main() {
 	p := persona{Nombre: "Juan", Edad: 20, Id: 912}
@@ -34,4 +38,14 @@ func main() {
 	*/
 	x := p.Nombre
 	fmt.Println(x)
+
+	/*
+		Inicializacion completamente
+		vacia:
+
+		p1 := new(persona)
+
+
+	*/
+
 }
