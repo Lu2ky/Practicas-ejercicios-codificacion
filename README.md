@@ -1,6 +1,6 @@
-#PARA HTML
+# PARA HTML
 
-##USO DE SENTENCIA "!" AL INICIO
+## USO DE SENTENCIA "!" AL INICIO
 El uso de esta sentencia al inicio de un archivo HTML genera un codigo predeterminado el cual es el siguiente:
 <!DOCTYPE html>
     <html lang="en">
