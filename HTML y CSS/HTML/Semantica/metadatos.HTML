@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadatos</title>
+</head>
+<body style="background-color: rgba(121, 118, 118, 0.733); padding: 10px;">
+    <header>
+    <div style="display: flex; align-items: center; background-color: rgb(255, 255, 255); width: fit-content; border-radius: 10px; padding: 20px;">
+        <img src="Recursos/HTML5_logo_and_wordmark.svg (1).png"width="100">
+        <h1 style="margin-left: 1px;">Metadatos</h1>
+    </div>
+    </header>
+    <nav>
+        
+    </nav>
+    <p>
+        Los metadatos son utilizados para darle facilidades a los motores de busqueda<br>
+        estos mismos analizan el documento HTML y contenido multimedia para determinar la relevancia<br>
+        <br>
+        Las meta etiquetas definen metadatos sobre una pagina web<br>
+        se añaden dentro del elemento <code>&lt;head&gt;</code> osea no es algo visible<br>
+        Estructura basica:
+        <br>
+        <pre><code>  &lt;meta name="nombre" content="valor"&gt;  </code></pre>
+        estos metadatos proporcionan informacion valiosa a los motores de busqueda
+        <h2>Metaetiquetas basicas para SEO(Search Engine Optimization)</h2>
+        <ul style="background-color: rgb(0, 0, 0); width: fit-content; border-radius: 10px; padding: 25px; color:white">
+            <li>
+                <i><b><code>&lt;meta name="description" content=""&gt;</code></b></i> = Se añade una descripcion breve de la pagina 
+            </li>
+            <li>
+                <i><b><code>&lt;meta name="title" content=""&gt;</code></b></i> = Se pone el titulo de la pagina
+            </li>
+            <li>
+                <i><b><code>&lt;meta name="autor" content=""&gt;</code></b></i> = Se pone el nombre del autor
+            </li>
+            <li>
+                <i><b><code>&lt;meta name="language" content=""&gt;</code></b></i> = Especifica el idioma de la pagina
+            </li>
+            <li>
+                <i><b><code>&lt;meta name="robots" content=""&gt;</code></b></i> = Indica a los buscadores como rastrear la pagina
+                <ul>
+                    Content:
+                    <li>
+                        "index" = analiza la pagina
+                    </li>
+                    <li>
+                        "follow" = visita los enlaces
+                    </li>
+                    <li>
+                        "noindex" = no analiza la pagina
+                    </li>
+                    <li>
+                        "nofollow" = no visita los enlaces
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i><b><code>&lt;meta name="google" content=""&gt;</code></b></i> = Controla como Google mustra los resultados de busqueda
+                <ul>
+                    Content:
+                    <li>"noindex" = evita que google indexe la pagina</li>
+                    <li>"nosnippet" = no muestra fragmentos de texto ni cache en los resultados</li>
+                    <li>"noarchive" = evita que google indexe la pagina</li>
+                    <li>"notranslate" = evita que Google ofrezca traducir la pagina</li>
+                    <li>"noimageindex" = evita que las imagenes de la pagina se indexen en Google imagenes</li>
+                    <li>"unavailable_after: [fecha]" = indica cuando dejar de mostrar la pagina en resultados<br>
+                    <b> Ejemplo: </b> unavailable_after: 25-Sep-2025 15:00:00 EST</li>
+                    <li>"nositelinkssearchbox" = evita que aparezca el cuadro de busqueda de sitio en los resultados</li>
+                </ul>
+            </li>
+            <li><i><b><code>&lt;meta name="googlebot" content=""&gt;</code></b></i> = Controla como Google muestra los resultados de busqueda, tiene el content de robots y de google</li>
+            <li><i><b><code>&lt;meta name="revised" content="date"&gt;</code></b></i> = Especifica la fecha de ultima modificacion</li>
+            <li><i><b><code>&lt;meta name="rating" content=""&gt;</code></b></i> = Especifica la audiencia prevista</li>
+            <ul>
+                Content:
+                <li>general</li>
+                <li>14 years</li>
+                <li>safe for kids</li>
+                <li>mature</li>
+            </ul>
+            <li><i><b><code>&lt;meta name="copyright" content="Copyright 2022"&gt;</code></b></i> = Especifica informacion de copyright</li>
+        </ul>
+        <h2>Etiquetas meta http-equiv</h2>
+        <ul style="background-color: rgb(0, 0, 0); width: fit-content; border-radius: 10px; padding: 25px; color: white;">
+            <li><i><b><code>&lt;meta http-equiv="content-type" content="text/html"&gt;</code></b></i> = Formato del documento </li>
+            <li><i><b><code>&lt;meta http-equiv="default-style" content=""&gt;</code></b></i> = Formato del documento de estilo (CSS) </li>
+            <li><i><b><code>&lt;meta http-equiv="refresh" content=""&gt;</code></b></i> = Duracion antes de considerar la pagina obsolote </li>
+            <li><i><b><code>&lt;meta http-equiv="Content-language" content=""&gt;</code></b></i> = Especifica el idioma </li>
+            <li><i><b><code>&lt;meta http-equiv="Cache-Control" content="no-cache"&gt;</code></b></i> = Controla el almacenamiento en cache </li>
+        </ul>
+        <h2>Metaetiquetas para diseño responsive</h2>
+        <ul style="background-color: rgb(0, 0, 0); width: fit-content; border-radius: 10px; padding: 25px; color:white">
+            <li><i><b><code>&lt;meta name="format-detection" content="telephone=yes"&gt;</code></b></i> = Hace numeros telefonicos clicables </li>
+            <li><i><b><code>&lt;meta name="HandheldFriendly" content="true"&gt;</code></b></i> = Indica compatibilidad con dispositivos moviles </li>
+            <li><i><b><code>&lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt;</code></b></i> = Configura el area visible en dispositivos moviles  </li>
+        </ul>
+
+    </p>
+    <h3>
+      <a href="Principal.HTML" style="text-decoration: dashed; background-color: white; color: black; padding: 10px; border-radius: 10px;">Volver</a>
+    </h3>
+</body>
+</html>
