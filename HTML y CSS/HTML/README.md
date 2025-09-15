@@ -1,8 +1,9 @@
-# PARA HTML
+# USO DE SENTENCIA "!" AL INICIO
 
-## USO DE SENTENCIA "!" AL INICIO
 El uso de esta sentencia al inicio de un archivo HTML genera un codigo predeterminado el cual es el siguiente:
+
 <!DOCTYPE html>
+
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -11,7 +12,7 @@ El uso de esta sentencia al inicio de un archivo HTML genera un codigo predeterm
     </head>
     <body>
         <header>
-    
+
         </header>
     </body>
     </html>
