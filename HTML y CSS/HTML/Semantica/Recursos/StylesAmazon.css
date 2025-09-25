@@ -1,0 +1,82 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: 'Amazon Ember', sans-serif;
+        }
+
+
+        header {
+            background-color: #131921;
+            width: 100%;
+            height: 80px; 
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .header-logo {
+            height: 100%;
+            padding: 0 10px;
+        }
+        .header-location {
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .header-location img {
+            padding-left: 2%;
+            height: 30px;
+        }
+        .location-text p {
+            font-size: 0.8em;
+            color: #ccc;
+        }
+        .location-text h3 {
+            font-size: 1em;
+        }
+        
+        .search-container {
+            flex: 1;
+            width: auto;
+            display: flex;
+            align-items: center;
+            height: 40px;
+            padding-left: 2%;
+        }
+        
+        .search-container input {
+            width: 50%;
+            height: 100%;
+            border: none;
+            border-radius: 0 0 0 0;
+            font-size: 1em;
+            padding-left: 1%;
+            outline: none;
+        }
+
+        .search-container select {
+            height: 100%;
+            cursor: pointer;
+            border: none;
+            width: 60px;
+            padding: 0.5%;
+            white-space: nowrap;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-container select:focus {
+            outline: none;
+            border: 4px solid #F2C744;
+            box-shadow: 0 0 5px #F2C744; 
+        }
+        .search-container img{
+            background-color: #F2C744;
+            height: 100%;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+        
