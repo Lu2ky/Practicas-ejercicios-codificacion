@@ -13,7 +13,7 @@
         header {
             background-color: #131921;
             width: 100%;
-            height: 80px; 
+            height: 10%; 
             color: white;
             display: flex;
             align-items: center;
@@ -39,18 +39,23 @@
         .location-text h3 {
             font-size: 1em;
         }
+        .Texto-Sup {
+            font-size: 0.7em;
+        }
+        .Texto-inf{
+            font-weight: 700;
+        }
         
         .search-container {
-            flex: 1;
-            width: auto;
+            width: 150%;
             display: flex;
             align-items: center;
-            height: 40px;
-            padding-left: 2%;
+            height: 50%;
+            padding-left: 1%;
         }
         
         .search-container input {
-            width: 50%;
+            width: 150%;
             height: 100%;
             border: none;
             border-radius: 0 0 0 0;
@@ -79,4 +84,43 @@
             cursor: pointer;
             border-radius: 0 4px 4px 0;
         }
+.Desplegable {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    font-weight: 1000;
+    position: relative;
+    margin-left: 2%;
+}
+
+.Desplegable img {
+    display: block;
+    margin-top: 3%;
+    width: 10%; /* más legible que 2% */
+    height: 40%;         
+}
+
+.Desplegable button {      /* ajusta según la altura de la imagen */
+    right: 0;       /* para que esté en el borde derecho */
+    height: auto;
+    max-width: 3%;   /* igual que la imagen */
+    width: 8%;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    z-index: 10;
+    position:absolute;
+}
+
+.Desplegable button:focus {
+    outline: none;
+    border: 4px solid #F2C744;
+    box-shadow: 0 0 5px #F2C744; 
+}
+
+
+        
         
