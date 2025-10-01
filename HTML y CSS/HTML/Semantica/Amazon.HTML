@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Recursos/StylesAmazon.css">
+    
 </head>
 <body>
+    <script src="Recursos/amazon.js" defer></script>
     <header>
         <img src="Recursos/Amazon-Symbol-removebg-preview.png" alt="Amazon Logo" class="header-logo">
         <div class="header-location">
             <img src="Recursos/icon1fix.png" alt="Location logo">
             <div>
                 <p class = "Texto-Sup">Deliver to</p>
-                <p class = "Texto-inf">Colombia</p>
+                <p class = "Texto-inf" id="owo">Colombia</p>
             </div>
         </div>
         <div class="search-container">
@@ -49,19 +51,30 @@
                 <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
             </select>
             <input type="text" placeholder="Search Amazon">
-            <img src ="Recursos/loupe-icon-magnifier-in-flat-style-search-sign-concept-vector-removebg-preview.png">
+            <img src ="Recursos/loupe-icon-magnifier-in-flat-style-search-sign-concept-vector-removebg-preview.png" id="ewe">
         </div>
             
-            <div class="Desplegable">
-                <img src="Recursos/Flag_of_the_United_States_(Web_Colors).svg.png" alt="Flag">
-                <button>&lt;</button>
-                    <div class="Desplegable contenido">
-
+            <div class="dropdown">
+                <img src="Recursos/Flag_of_the_United_States_(Web_Colors).svg.png" id="Flag">
+                <p id="flagname">US</p>
+                <button class="dropbtn" id="menuButton">&lt;</button>
+                <div class="pestaña" id="pestaña">
+                    <p>▲</p>
                 </div>
-        </div>
-            
-        </div>
+                <div class= "dropdown-content" id="menu">
+                    
+                    
+                    <p>Cambiar idioma</p>
+                    <label><input type="radio" name="lang" value="EN" checked>English - EN</label>
+                    <div class ="divider"></div>
+                    <label><input type="radio" name="lang" value="ES">Español - ES</label>
+                    <label><input type="radio" name="lang" value="DE">Deutsch - DE</label>
+                </div>
     </header>
+    <main id="main">  
+
+
+    </main>
 
 </body>
 </html>

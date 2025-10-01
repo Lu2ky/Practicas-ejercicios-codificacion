@@ -8,12 +8,16 @@
             height: 100%;
             font-family: 'Amazon Ember', sans-serif;
         }
+        body{
+            background-color: rgb(255, 255, 255);
+            
+        }
 
 
         header {
             background-color: #131921;
             width: 100%;
-            height: 10%; 
+            height: 7.8%; 
             color: white;
             display: flex;
             align-items: center;
@@ -84,43 +88,88 @@
             cursor: pointer;
             border-radius: 0 4px 4px 0;
         }
-.Desplegable {
+.dropdown {
     display: flex;
     width: 100%;
     height: 50%;
-    font-weight: 1000;
     position: relative;
     margin-left: 2%;
+    
+}
+.pestaña {
+    display:none;
+    margin-top: 5%;
+    margin-left: -2%;
+    color: rgb(255, 255, 255);
+    background: none;
+    font-size: 150%;
+    z-index: 10;
+    cursor: default;
 }
 
-.Desplegable img {
-    display: block;
-    margin-top: 3%;
-    width: 10%; /* más legible que 2% */
-    height: 40%;         
+.dropdown img {
+    margin-top: 2%;
+    width: auto;
+    height: 50%;   
+
+}
+.dropdown p{
+    margin-top: 2.5%;
+    font-weight: bold;
 }
 
-.Desplegable button {      /* ajusta según la altura de la imagen */
-    right: 0;       /* para que esté en el borde derecho */
+.dropdown button {   
     height: auto;
-    max-width: 3%;   /* igual que la imagen */
+    max-width: 3%; 
     width: 8%;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 150%;
     color: white;
     background: none;
     border: none;
     border-radius: 3px;
     z-index: 10;
-    position:absolute;
-}
-
-.Desplegable button:focus {
-    outline: none;
-    border: 4px solid #F2C744;
-    box-shadow: 0 0 5px #F2C744; 
+    margin-top: 1.5%;
 }
 
 
-        
+    .dropdown-content {
+      display: none;
+      margin-top: 8.5%;
+      margin-left: 9%;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 10%;
+      color: black;
+      z-index: 1;
+      width: fit-content;
+      padding-bottom: 10%;
+      padding-left: 1%;
+      padding-right: 10%;
+    }
+    .dropdown-content img{
+      height: 5%;
+      width: 10%;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+      display: grid;
+    }
+
+    .dropdown:hover .pestaña{
+        display: grid;
+    }
+
+    
+    .divider{
+        border-top: 1px solid #000000;
+        margin: 10px 0px;
+        width: auto;
+    }
+    main{
+        width: 100%;
+        height: 92.2%; 
+        background-color: rgb(255, 255, 255);
+    }
         
